@@ -32,7 +32,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
-	
+	implementation 'org.springframework:spring-context:6.0.6'
 }
 
 tasks.named('test') {

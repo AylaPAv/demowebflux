@@ -1,11 +1,11 @@
 package es.aylait.demowebflux.repository;
 
-import es.aylait.demowebflux.domain.Country;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import es.aylait.demowebflux.domain.Language;
+
 @Repository
-public interface CountryRepository extends JpaRepository<Country, Long> {
-	
+public interface LanguageRepository extends JpaRepository<Language,Long> {
+
 }
