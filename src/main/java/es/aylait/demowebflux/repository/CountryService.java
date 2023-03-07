@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import lombok.NoArgsConstructor;
 
-@Service
+@Service("countryService")
 @NoArgsConstructor
 public class CountryService {
 	
@@ -23,5 +23,11 @@ public class CountryService {
 		Iterable<Country> resources = countryRepository.findAll();
 		
 		return resources;
+	}
+	
+	public Iterable<Country> findByCountryName(String country) {
+		Iterable<Country> result = countryRepository.findByCountryContaining(country);
+		
+		return result;
 	}
 }

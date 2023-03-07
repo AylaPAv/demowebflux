@@ -11,4 +11,7 @@
 	<bean id="languageService"
 		class = "es.aylait.demowebflux.repository.LanguageService">
 	</bean>
+	<bean id="cityService"
+		class = "es.aylait.demowebflux.repository.CityService">
+	</bean>
 </beans>

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import lombok.NoArgsConstructor;
 
-@Service
+@Service("languageService")
 @NoArgsConstructor
 public class LanguageService {
 	private LanguageRepository languageRepository = null;
